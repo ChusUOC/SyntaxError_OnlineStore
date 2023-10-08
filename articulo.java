@@ -10,7 +10,7 @@ public class articulo {
 
     private String codigo;
     private String descripcion;
-    private double previoventa;
+    private double precioventa;
     private double gastosenvio;
     private LocalTime tiempopreparacion;
 
@@ -25,7 +25,7 @@ public class articulo {
     public articulo(String Codigo, String Descripcion, double PrecioVenta, double GastosEnvio, LocalTime TiempoPreparacion){
         this.codigo = Codigo;
         this.descripcion = Descripcion;
-        this.previoventa = PrevioVenta;
+        this.precioventa = PrecioVenta;
         this.gastosenvio = GastosEnvio;
         this.tiempopreparacion = TiempoPreparacion;
     }
@@ -34,28 +34,44 @@ public class articulo {
      * Getters and Setters
      */
 
+    /**
+     * Método que devuelve el código del artículo
+     * @return Devuelve el código del artículo
+     */
     public String getCodigo() {
         return codigo;
     }
 
+    /**
+     * Metodo que establece el código del artículo
+     * @param codigo
+     */
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
+    /**
+     * Método que devuelve la descripción del artículo
+     * @return
+     */
     public String getDescripcion() {
         return descripcion;
     }
 
+    /**
+     *
+     * @param descripcion
+     */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
-    public double getPrevioventa() {
-        return previoventa;
+    public double getPrecioventa() {
+        return precioventa;
     }
 
-    public void setPrevioventa(double previoventa) {
-        this.previoventa = previoventa;
+    public void setPrecioventa(double previoventa) {
+        this.precioventa = previoventa;
     }
 
     public double getGastosenvio() {
