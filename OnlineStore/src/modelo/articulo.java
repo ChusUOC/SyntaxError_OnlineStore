@@ -1,10 +1,9 @@
-/**
- * Clase articulo.java
+package modelo; /**
+ * Clase Modelo.articulo.java
  * Esta clase contiene las referencias a los artículos.
  */
 
 import java.time.*;
-import java.time.temporal.ChronoUnit;
 
 public class articulo {
 
@@ -14,13 +13,13 @@ public class articulo {
     private double gastosenvio;
     private LocalTime tiempopreparacion;
 
-    /** Constructor de la clase articulo
+    /** Constructor de la clase Modelo.articulo
      *
      * @param Codigo Indica el código del artículo.
      * @param Descripcion Muestra la descripción del artículo.
      * @param PrecioVenta Precio venta del artículo.
      * @param GastosEnvio Gastos de envío del artículo.
-     * @param TiempoPreparacion Tiempo de preparación del artículo. Es importante ya que idncia el momento en el que ya no se podrá cancelar el pedido.
+     * @param TiempoPreparacion Tiempo de preparación del artículo. Es importante ya que idncia el momento en el que ya no se podrá cancelar el Modelo.pedido.
      */
     public articulo(String Codigo, String Descripcion, double PrecioVenta, double GastosEnvio, LocalTime TiempoPreparacion){
         this.codigo = Codigo;
@@ -114,10 +113,9 @@ public class articulo {
     public String toString() {
         return "\nCódigo: " + this.codigo
                 + "\nDescripción: " + this.descripcion
-                + "\nPrecio Venta : " + this.previoventa
+                + "\nPrecio Venta : " + this.precioventa
                 + "\nGastos envío: " + this.gastosenvio
                 + "\nTiempo preparación: " + this.tiempopreparacion
-                + "\n\n----------------------------------------------------\n";
+                + "\n----------------------------------------------------\n";
     }
-}
 }

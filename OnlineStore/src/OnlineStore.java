@@ -67,10 +67,10 @@ public class OnlineStore {
             System.out.println("+-------------------------------------------+");
             System.out.println("| Online Store - Menú Clientes              |");
             System.out.println("+-------------------------------------------+\n");
-            System.out.println("1. Nuevo cliente");
-            System.out.println("2. Borrar cliente");
-            System.out.println("3. Ver cliente");
-            System.out.println("4. Listado clientes Estandard");
+            System.out.println("1. Nuevo Modelo.cliente");
+            System.out.println("2. Borrar Modelo.cliente");
+            System.out.println("3. Ver Modelo.cliente");
+            System.out.println("4. Listado clientes Standard");
             System.out.println("5. Listado clientes Premium");
             System.out.println("············································");
             System.out.println("0. Volver al menú principal");
@@ -88,21 +88,21 @@ public class OnlineStore {
     }
 
     /**
-     * Añadir un nuevo cliente a la BBDD
+     * Añadir un nuevo Modelo.cliente a la BBDD
      */
     void nuevocliente(){
 
     }
 
     /**
-     * Dar de baja a un cliente de la BBDD
+     * Dar de baja a un Modelo.cliente de la BBDD
      */
     void borrarcliente(){
 
     }
 
     /**
-     * Ver una ficha del cliente
+     * Ver una ficha del Modelo.cliente
      */
     void vercliente(){
 
@@ -176,9 +176,9 @@ public class OnlineStore {
             System.out.println("+-------------------------------------------+");
             System.out.println("| Online Store - Menú Pedidos               |");
             System.out.println("+-------------------------------------------+\n");
-            System.out.println("1. Crear un pedido");
-            System.out.println("2. Eliminar un pedido");
-            System.out.println("3. Ver un pedido");
+            System.out.println("1. Crear un Modelo.pedido");
+            System.out.println("2. Eliminar un Modelo.pedido");
+            System.out.println("3. Ver un Modelo.pedido");
             System.out.println("4. Listar pedidos pendientes");
             System.out.println("5. Listar pedidos enviados");
             System.out.println("············································");
@@ -204,14 +204,14 @@ public class OnlineStore {
     }
 
     /**
-     * Método para eliminar un pedido
+     * Método para eliminar un Modelo.pedido
      */
     void eliminarpedido(){
 
     }
     
     /**
-     * Método para ver un pedido
+     * Método para ver un Modelo.pedido
      */
     void verpedido(){
 
