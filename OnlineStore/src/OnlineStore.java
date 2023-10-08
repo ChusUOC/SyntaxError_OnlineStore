@@ -123,7 +123,7 @@ public class OnlineStore {
     }
 
     /**
-     * Menñu de artículos
+     * Menú de artículos
      */
     void articulos(){
         boolean salir = false;
@@ -166,6 +166,68 @@ public class OnlineStore {
      * Listar artículos existentes en la BBDD de Online Store
      */
     void listararticulos(){
+
+    }
+    
+    void pedidos(){
+        boolean salir = false;
+        char opcio;
+        do {
+            System.out.println("+-------------------------------------------+");
+            System.out.println("| Online Store - Menú Pedidos               |");
+            System.out.println("+-------------------------------------------+\n");
+            System.out.println("1. Crear un pedido");
+            System.out.println("2. Eliminar un pedido");
+            System.out.println("3. Ver un pedido");
+            System.out.println("4. Listar pedidos pendientes");
+            System.out.println("5. Listar pedidos enviados");
+            System.out.println("············································");
+            System.out.println("0. Salir de la aplicación");
+            System.out.println("============================================");
+            opcio = demanarOpcioMenu();
+            switch (opcio) {
+                case '1' -> nuevopedido();
+                case '2' -> eliminarpedido();
+                case '3' -> verpedido();
+                case '4' -> listarpedidospendientes();
+                case '5' -> listarpedidosenviados();
+                case '0' -> salir = true;
+            }
+        } while (!salir); 
+    }
+
+    /**
+     * Método para introducir pedidos nuevos
+     */
+    void nuevopedido(){
+        
+    }
+
+    /**
+     * Método para eliminar un pedido
+     */
+    void eliminarpedido(){
+
+    }
+    
+    /**
+     * Método para ver un pedido
+     */
+    void verpedido(){
+
+    }
+    
+    /**
+     * Método para ver los pedidos pendientes
+     */
+    void listarpedidospendientes(){
+
+    }
+    
+    /**
+     * Método para ver los pedidos enviados
+     */
+    void listarpedidosenviados(){
 
     }
 }
