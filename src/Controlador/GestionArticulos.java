@@ -9,21 +9,21 @@ public class GestionArticulos {
     }
 
     /**
-     * Metodo añadir articulo
+     * Método añadir articulo
      */
     public void addArticulo(){
 
     }
 
     /**
-     * Metodo ver Articulo
+     * Método ver artículo
      */
     public void showArticulo(){
 
     }
 
     /**
-     * Metodo ver articulos con filtro
+     * Método ver articulos con filtro
      */
     public void showArticleFilter(){
 

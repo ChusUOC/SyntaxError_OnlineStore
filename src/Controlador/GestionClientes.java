@@ -9,28 +9,28 @@ public class GestionClientes {
     }
 
     /**
-     * Metodo Agregar Cliente
+     * Método Añadir Cliente
      */
     public void addClientes() {
 
     }
 
     /**
-     * Metodo Ver Cliente
+     * Método Ver Cliente
      */
     public void showClientes(){
 
     }
 
     /**
-     * Metodo Ver Clientes Stantard
+     * Método Ver Clientes Stantard
      */
     public void showClientesStandard(){
 
     }
 
     /**
-     * Metodo Ver Clientes Premium
+     * Método Ver Clientes Premium
      */
     public void showClientesPremium(){
 

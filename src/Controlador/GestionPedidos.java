@@ -8,49 +8,49 @@ public class GestionPedidos {
     }
 
     /**
-     * Metodo Agregar Pedido
+     * Método Añadir pedido
      */
     public void addPedido() {
 
     }
 
     /**
-     * Metodo Ver Cliente
+     * Método Ver pedido
      */
     public void showPedido(){
 
     }
 
     /**
-     * Metodo Ver Pedidos Pendientes
+     * Método Ver pedidos pendientes
      */
     public void showPedidosPendientes(){
 
     }
 
     /**
-     * Metodo Ver Pedidos Enviados
+     * Método Ver pedidos enviados
      */
     public void showPedidosEnviados(){
 
     }
 
     /**
-     * Metodo Calculo Pedido
+     * Método cálculo precio pedido
      */
-    public double calculoPedido(){
+    public double calculoPrecioPedido(){
         return 0.0;
     }
 
     /**
-     * Metodeo Calculo Emision Pedido
+     * Método cálculo emisión pedido
      */
     public double calculoEmision(){
         return 0.0;
     }
 
     /**
-     * Metodo Boolean verificacion Envio
+     * Método Boolean verificacion envío
      * @return boolean
      */
     public Boolean CheckEnvio(){
