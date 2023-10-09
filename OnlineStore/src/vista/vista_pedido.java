@@ -20,7 +20,7 @@ public class vista_pedido {
         return resp.charAt(0);
     }
 
-    void pedidos(){
+    static void pedidos(){
         boolean salir = false;
         char opcio;
         do {

@@ -10,7 +10,7 @@ public class vista_articulo {
      * Método para seleccionar una opción
      * @return Valor de la tecla pulsada.
      */
-    char demanarOpcioMenu() {
+    static char demanarOpcioMenu() {
         String resp;
         System.out.print("Elige una opción (1,2,3,4 o 0): ");
         resp = teclado.nextLine();
@@ -23,7 +23,7 @@ public class vista_articulo {
     /**
      * Menú de artículos
      */
-    void articulos(){
+    static void articulos(){
         boolean salir = false;
         char opcio;
         do {
@@ -50,21 +50,21 @@ public class vista_articulo {
     /**
      * Crear un nuevo artículo en la BBDD de Online Store
      */
-    void nuevoarticulo(){
+    static void nuevoarticulo(){
 
     }
 
     /**
      * Borrar un artículo existente en la BBDD de Online Store
      */
-    void borrararticulo(){
+    static void borrararticulo(){
 
     }
 
     /**
      * Listar artículos existentes en la BBDD de Online Store
      */
-    void listararticulos(){
+    static void listararticulos(){
 
     }
 
