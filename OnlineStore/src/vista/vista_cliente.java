@@ -18,7 +18,7 @@ public class vista_cliente {
         return resp.charAt(0);
     }
 
-    static void clientes(){
+    void clientes(){
         boolean salir = false;
         char opcio;
         do {

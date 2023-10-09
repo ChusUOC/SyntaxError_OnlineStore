@@ -23,7 +23,7 @@ public class vista_articulo {
     /**
      * Menú de artículos
      */
-    static void articulos(){
+    void articulos(){
         boolean salir = false;
         char opcio;
         do {

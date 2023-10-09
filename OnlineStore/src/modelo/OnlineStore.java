@@ -30,4 +30,8 @@ public class OnlineStore {
         return resp.charAt(0);
     }
 
+    void inicio(){
+        OnlineStore vista_onlinestore;
+    }
+
 }
