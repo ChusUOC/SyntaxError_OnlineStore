@@ -1,4 +1,4 @@
-package modelo;
+package OnlineStore.modelo;
 
 public abstract class cliente {
 
@@ -69,6 +69,16 @@ public abstract class cliente {
     public void setDomicilio(String domicilio) {
         this.domicilio = domicilio;
     }
+
+    /**
+     * Otros métodos a implementar
+     */
+
+    public abstract String tipoCliente();
+
+    public abstract float calcAnual();
+
+    public abstract float descuentoEnv();
 
     /**
      * Método que devuelve la información del Modelo.cliente.

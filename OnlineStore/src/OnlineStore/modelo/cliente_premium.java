@@ -1,4 +1,4 @@
-package modelo;
+package OnlineStore.modelo;
 
 public class cliente_premium extends cliente {
 
@@ -45,6 +45,35 @@ public class cliente_premium extends cliente {
      */
     public void setDescuento(double descuento) {
         this.descuento = descuento;
+    }
+
+
+    /**
+     * Otros métodos
+     */
+
+    @Override
+    public float descuentoEnv() {
+        // Aquí proporciona la implementación concreta del descuento en envío.
+        // Por ejemplo, calcula el descuento y devuelve el valor en float.
+        float descuento = 5.0f; // Ejemplo: un descuento fijo de $5.0
+        return descuento;
+    }
+
+    @Override
+    public float calcAnual() {
+        // Aquí proporciona la implementación concreta del descuento en envío.
+        // Por ejemplo, calcula el descuento y devuelve el valor en float.
+        float descuento = 5.0f; // Ejemplo: un descuento fijo de $5.0
+        return descuento;
+    }
+
+    @Override
+    public String tipoCliente() {
+        // Aquí proporciona la implementación concreta del descuento en envío.
+        // Por ejemplo, calcula el descuento y devuelve el valor en float.
+        String Tipo="prueba"; // Ejemplo: un descuento fijo de $5.0
+        return Tipo;
     }
 
     /**

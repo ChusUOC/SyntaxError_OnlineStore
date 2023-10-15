@@ -1,20 +1,10 @@
-package modelo;
+package OnlineStore.vista;
 
 import java.util.Scanner;
 
-/**
- * Online Store
- */
-public class OnlineStore {
+public class vista_pedido {
+
     Scanner teclado = new Scanner(System.in);
-    /**
-     * Inicio del programa
-     * @param args En caso de pasar argumentos al programa.
-     */
-    public static void main(String[] args){
-        OnlineStore prg = new OnlineStore();
-        prg.inicio();
-    }
 
     /**
      * Método para seleccionar una opción
@@ -28,10 +18,6 @@ public class OnlineStore {
             resp = " ";
         }
         return resp.charAt(0);
-    }
-
-    void inicio(){
-        OnlineStore vista_onlinestore;
     }
 
 }

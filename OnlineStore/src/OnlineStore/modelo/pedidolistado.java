@@ -1,4 +1,4 @@
-package modelo;
+package OnlineStore.modelo;
 
 import java.util.ArrayList;
 

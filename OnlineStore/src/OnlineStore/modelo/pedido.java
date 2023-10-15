@@ -1,4 +1,4 @@
-package modelo;
+package OnlineStore.modelo;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -77,5 +77,18 @@ public class pedido {
 
     }
 
+    /**
+     * Otros métodos
+     */
+
+    public double pedidoEnviado(){
+
+        return 5.5;
+    };
+
+    public float precioEnvio(){
+
+        return 6.5F;
+    };
 
 }

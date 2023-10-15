@@ -1,4 +1,4 @@
-package modelo; /**
+package OnlineStore.modelo; /**
  * Clase Modelo.articulo.java
  * Esta clase contiene las referencias a los artículos.
  */
