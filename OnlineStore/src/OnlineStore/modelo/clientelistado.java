@@ -13,14 +13,14 @@ public class clientelistado {
     void mostrarpedido(String NIF){
         for (int i =0; i<ARR_Cliente.size(); i++){
             if (NIF == ARR_Cliente.get(i).getNif()) {
-                System.out.println("Índice (" + i + ") : " + ARR_Cliente.get(i));
+                System.out.print("Índice (" + i + ") : " + ARR_Cliente.get(i));
             }
         }
     }
 
     void listarpedidos(){
         for (int i =0; i<ARR_Cliente.size(); i++){
-            System.out.println("Índice (" + i + ") : " + ARR_Cliente.get(i));
+            System.out.print("Índice (" + i + ") : " + ARR_Cliente.get(i));
         }
     }
 

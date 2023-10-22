@@ -3,7 +3,7 @@ package OnlineStore.modelo; /**
  * Esta clase contiene las referencias a los artículos.
  */
 
-import java.time.*;
+import java.time.LocalTime;
 
 public class articulo {
 
@@ -75,10 +75,10 @@ public class articulo {
 
     /**
      * Método que establece el precio de venta del artículo
-     * @param previoventa precio de venta del artículo
+     * @param precioventa precio de venta del artículo
      */
-    public void setPrecioventa(double previoventa) {
-        this.precioventa = previoventa;
+    public void setPrecioventa(double precioventa) {
+        this.precioventa = precioventa;
     }
 
     /**
@@ -111,11 +111,11 @@ public class articulo {
      */
     @Override
     public String toString() {
-        return "\nCódigo: " + this.codigo
-                + "\nDescripción: " + this.descripcion
-                + "\nPrecio Venta : " + this.precioventa
-                + "\nGastos envío: " + this.gastosenvio
-                + "\nTiempo preparación: " + this.tiempopreparacion
-                + "\n----------------------------------------------------\n";
+        return "Código: " + String.format("%-10s",this.codigo)
+                + "\tDescripción: " + String.format("%-20s",this.descripcion)
+                + "\tPrecio Venta : " + this.precioventa
+                + "\tGastos envío: " + this.gastosenvio
+                + "\tTiempo preparación: " + this.tiempopreparacion
+                + "\n";
     }
 }

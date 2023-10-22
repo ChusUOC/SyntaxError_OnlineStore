@@ -91,4 +91,22 @@ public class pedido {
         return 6.5F;
     };
 
+
+    public void MuestraTicket(int Pedido){
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println("| Nº Pedido    : " + this.getNumpedido());
+        System.out.println("| Cliente      : " + this.getCliente() );
+        System.out.println("| Fecha Pedido : " + this.getFechapedido() + " Hora : " + this.getHorapedido() );
+        System.out.println("------------------------------------------------------------------------------------");
+        System.out.println(this.getArticulo().toString() + " CANTIDAD : " + this.getUnidades());
+        double subtotalpedido;
+        double totalpedido;
+        subtotalpedido = this.getArticulo().getPrecioventa() + this.getUnidades();
+        totalpedido = subtotalpedido + this.getArticulo().getGastosenvio();
+        System.out.println("Importe pedido    : " + String.format("%-8s", subtotalpedido));
+        System.out.println("Importe descuento : " + String.format("%-8s", this.getArticulo().getGastosenvio()));
+        System.out.println("TOTAL             : " + String.format("%-8s", totalpedido));
+        System.out.println("------------------------------------------------------------------------------------");
+    }
+
 }

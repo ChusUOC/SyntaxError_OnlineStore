@@ -2,13 +2,15 @@ package OnlineStore.modelo;
 
 public class cliente_premium extends cliente {
 
-    private int cuota;
-    private double descuento;
+    /**
+     * Al ser valores fijos las declaro como Constantes.
+     */
+    public static final float cuota = 30.00f;
+    public static final float descuento = 0.20f;
+    public static final String TipoCliente = "PREMIUM";
 
-    public cliente_premium(String NIF, String Nombre, String Domicilio, int Cuota, double Descuento){
+    public cliente_premium(String NIF, String Nombre, String Domicilio){
         super(NIF, Nombre, Domicilio);
-        this.cuota=Cuota;
-        this.descuento=Descuento;
     }
 
     /**
@@ -19,34 +21,17 @@ public class cliente_premium extends cliente {
      * Método que devuelve el importe de la cuota del Modelo.cliente.
      * @return Cuota del Modelo.cliente
      */
-    public int getCuota() {
+    public float getCuota() {
         return cuota;
-    }
-
-    /**
-     * Método que establece la cuota del Modelo.cliente.
-     * @param cuota
-     */
-    public void setCuota(int cuota) {
-        this.cuota = cuota;
     }
 
     /**
      * Método que edevuelve el Descuento a aplicar al Modelo.cliente
      * @return Descuento del Modelo.cliente.
      */
-    public double getDescuento() {
+    public float getDescuento() {
         return descuento;
     }
-
-    /**
-     * Método que establece el descuento a aplicar al Modelo.cliente.
-     * @param descuento
-     */
-    public void setDescuento(double descuento) {
-        this.descuento = descuento;
-    }
-
 
     /**
      * Otros métodos
@@ -54,26 +39,17 @@ public class cliente_premium extends cliente {
 
     @Override
     public float descuentoEnv() {
-        // Aquí proporciona la implementación concreta del descuento en envío.
-        // Por ejemplo, calcula el descuento y devuelve el valor en float.
-        float descuento = 5.0f; // Ejemplo: un descuento fijo de $5.0
-        return descuento;
+        return this.descuento;
     }
 
     @Override
     public float calcAnual() {
-        // Aquí proporciona la implementación concreta del descuento en envío.
-        // Por ejemplo, calcula el descuento y devuelve el valor en float.
-        float descuento = 5.0f; // Ejemplo: un descuento fijo de $5.0
-        return descuento;
+        return this.cuota;
     }
 
     @Override
     public String tipoCliente() {
-        // Aquí proporciona la implementación concreta del descuento en envío.
-        // Por ejemplo, calcula el descuento y devuelve el valor en float.
-        String Tipo="prueba"; // Ejemplo: un descuento fijo de $5.0
-        return Tipo;
+        return  this.TipoCliente;
     }
 
     /**
@@ -83,9 +59,9 @@ public class cliente_premium extends cliente {
     @Override
     public String toString() {
         return super.toString()
-                + "\nCliente premium"
-                + "\nCuota: " + this.cuota
-                + "\nDescuento: " + this.descuento
-                + "\n----------------------------------------------------\n";
+                + "\t Tipo : " + String.format("%-12s", this.TipoCliente)
+                + "\t Cuota : " + this.cuota + "€"
+                + "\t Descuento : " + (this.descuento*100) + "%"
+                + "\n";
     }
 }

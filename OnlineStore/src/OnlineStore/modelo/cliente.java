@@ -86,9 +86,8 @@ public abstract class cliente {
      */
     @Override
     public String toString() {
-        return "\nNIF: " + this.nif
-                + "\nNombre del Modelo.cliente: " + this.nombre
-                + "\nDirección : " + this.domicilio
-                + "\n----------------------------------------------------\n";
+        return "NIF: " + String.format("%-15s",this.nif)
+                + "\tNombre cliente: " + String.format("%-10s",this.nombre)
+                + "\tDirección : " + String.format("%-20s",this.domicilio);
     }
 }

@@ -6,6 +6,9 @@ package OnlineStore.modelo;
  */
 
 public class cliente_estandard extends cliente {
+    public static final float cuota = 0.0f;
+    public static final float descuento = 0.0f;
+    public static final String TipoCliente = "ESTANDARD";
 
     /**
      * Constructor de la clase padre Cliente
@@ -24,26 +27,17 @@ public class cliente_estandard extends cliente {
 
     @Override
     public float descuentoEnv() {
-        // Aquí proporciona la implementación concreta del descuento en envío.
-        // Por ejemplo, calcula el descuento y devuelve el valor en float.
-        float descuento = 5.0f; // Ejemplo: un descuento fijo de $5.0
-        return descuento;
+        return this.descuento;
     }
 
     @Override
     public float calcAnual() {
-        // Aquí proporciona la implementación concreta del descuento en envío.
-        // Por ejemplo, calcula el descuento y devuelve el valor en float.
-        float descuento = 5.0f; // Ejemplo: un descuento fijo de $5.0
-        return descuento;
+        return this.cuota;
     }
 
     @Override
     public String tipoCliente() {
-        // Aquí proporciona la implementación concreta del descuento en envío.
-        // Por ejemplo, calcula el descuento y devuelve el valor en float.
-        String Tipo="prueba"; // Ejemplo: un descuento fijo de $5.0
-        return Tipo;
+        return this.TipoCliente;
     }
 
     /**
@@ -53,7 +47,9 @@ public class cliente_estandard extends cliente {
     @Override
     public String toString() {
         return super.toString()
-                + "\nCliente estandard"
-                + "\n----------------------------------------------------\n";
+                + "\t Tipo : " + String.format("%-12s", this.TipoCliente)
+                + "\t Cuota : " + this.cuota + "€"
+                + "\t Descuento : " + (this.descuento*100) + "%"
+                + "\n";
     }
 }
