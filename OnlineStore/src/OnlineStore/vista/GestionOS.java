@@ -219,9 +219,9 @@ public class GestionOS {
     public void borrararticulo(){
         String Opcion;
         ModeloInicial.listaarticuloindice();
-        System.out.println("Selecciona el índice para eliminarlo. 0 para salir.");
+        System.out.println("Selecciona el índice para eliminarlo. (E) para salir.");
         Opcion = teclado.nextLine();
-        if (Opcion.equals("0")){
+        if (Opcion.equals("E")){
             System.out.println("Abortado por el usuario.");
         }else{
             ModeloInicial.dropArticulo(Integer.parseInt(Opcion));
@@ -268,6 +268,7 @@ public class GestionOS {
      * Añadir un nuevo Modelo.cliente a la BBDD
      */
     public void nuevocliente(){
+        String mail;
         String nif;
         String nombre;
         String domicilio;
@@ -277,6 +278,8 @@ public class GestionOS {
         System.out.println("| NUEVO CLIENTE             ");
         System.out.println("----------------------------\n");
 
+        System.out.print("Mail         : ");
+        mail = teclado.nextLine();
         System.out.print("Nombre       : ");
         nombre = teclado.nextLine();
         System.out.print("Dirección    : ");
@@ -286,9 +289,9 @@ public class GestionOS {
         System.out.print("Tipo Cliente (P) PREMIUM / (E) ESTANDARD: ");
         TipoCliente = teclado.nextLine();
         if (TipoCliente.equals("P")){
-            ModeloInicial.addClientePremium(new cliente_premium(nif, nombre, domicilio));
+            ModeloInicial.addClientePremium(new cliente_premium(mail, nif, nombre, domicilio));
         }else{
-            ModeloInicial.addClienteEstandard(new cliente_estandard(nif, nombre, domicilio));
+            ModeloInicial.addClienteEstandard(new cliente_estandard(mail, nif, nombre, domicilio));
         }
 
     }

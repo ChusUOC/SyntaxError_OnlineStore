@@ -9,8 +9,8 @@ public class cliente_premium extends cliente {
     public static final float descuento = 0.20f;
     public static final String TipoCliente = "PREMIUM";
 
-    public cliente_premium(String NIF, String Nombre, String Domicilio){
-        super(NIF, Nombre, Domicilio);
+    public cliente_premium(String Mail, String NIF, String Nombre, String Domicilio){
+        super(Mail, NIF, Nombre, Domicilio);
     }
 
     /**

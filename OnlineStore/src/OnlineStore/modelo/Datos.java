@@ -29,12 +29,9 @@ public class Datos {
 
 
     public void dropcliente(int Indice){
-        cliente T;
-        T = listaClientes.getAt(Indice);
-        listaClientes.borrar(T);
+        listaClientes.eliminarElemento(Indice);
     }
     public void addClientePremium(cliente_premium Cliente){
-
         this.listaClientes.add(Cliente);
     }
 
@@ -65,8 +62,8 @@ public class Datos {
         System.out.println("| Índice\t Nombre Cliente \t Tipo Cliente");
         for (int i = 0; i < listaClientes.getSize(); i++){
             System.out.print("|" + i + "\t\t");
-            System.out.print( String.format("%-20s", listaClientes.getAt(i).getNombre()) + "\t");
-            System.out.println( String.format("%-20s",listaClientes.getAt(i).tipoCliente()) );
+            System.out.print( " " + String.format("%-20s", listaClientes.getAt(i).getNombre()) + "\t");
+            System.out.println( " " + String.format("%-20s",listaClientes.getAt(i).tipoCliente()) );
         }
     }
 
@@ -74,8 +71,8 @@ public class Datos {
         System.out.println("Índice\t Artículo  \t Descripción");
         for (int i = 0; i < listaArticulos.getSize(); i++){
             System.out.print("|" + i + "\t\t");
-            System.out.print(String.format("%-10s",listaArticulos.getAt(i).getCodigo()) + "\t");
-            System.out.println(String.format("%-20s",listaArticulos.getAt(i).getDescripcion()) );
+            System.out.print(" " + String.format("%-10s",listaArticulos.getAt(i).getCodigo()) + "\t");
+            System.out.println(" " + String.format("%-20s",listaArticulos.getAt(i).getDescripcion()) );
         }
     }
 
@@ -84,9 +81,7 @@ public class Datos {
     }
 
     public void dropPedido(int Indice){
-        pedido T;
-        T = listaPedidos.getAt(Indice);
-        listaPedidos.borrar(T);
+        listaArticulos.eliminarElemento(Indice);
     }
 
 

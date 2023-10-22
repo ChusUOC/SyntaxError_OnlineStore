@@ -36,6 +36,7 @@ public class Lista<T> {
             this.lista.remove(posicion);
         } else {
             System.out.println("La posición no es válida.");
+            throw new IllegalArgumentException("La posición no es válida.");
         }
     }
 

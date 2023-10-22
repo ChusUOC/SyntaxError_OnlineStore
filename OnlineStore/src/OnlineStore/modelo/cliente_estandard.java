@@ -17,8 +17,8 @@ public class cliente_estandard extends cliente {
      * @param Nombre    Nombre del Modelo.cliente
      * @param Domicilio Domicilio del Modelo.cliente
      */
-    public cliente_estandard(String NIF, String Nombre, String Domicilio) {
-        super(NIF, Nombre, Domicilio);
+    public cliente_estandard(String Mail, String NIF, String Nombre, String Domicilio) {
+        super(Mail, NIF, Nombre, Domicilio);
     }
 
     /**
