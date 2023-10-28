@@ -15,7 +15,7 @@ import OnlineStore.controlador.*;
  * Online Store
  */
 public class GestionOS {
-    Scanner teclado = new Scanner(System.in);
+
 
     public controlador InstanciaControlador = new controlador();
 
@@ -32,15 +32,7 @@ public class GestionOS {
      * Método para seleccionar una opción
      * @return Valor de la tecla pulsada.
      */
-    char demanarOpcioMenu() {
-        String resp;
-        System.out.print("Elige una opción (0 - Salir): ");
-        resp = teclado.nextLine();
-        if (resp.isEmpty()) {
-            resp = " ";
-        }
-        return resp.charAt(0);
-    }
+
 
     public void inicio(){
         boolean salir = false;
@@ -55,7 +47,7 @@ public class GestionOS {
             System.out.println("············································");
             System.out.println("0. Salir de la aplicación");
             System.out.println("============================================");
-            opcio = demanarOpcioMenu();
+            opcio = InstanciaControlador.demanarOpcioMenu();
             switch (opcio) {
                 case '1' -> clientes();
                 case '2' -> articulos();
@@ -81,7 +73,7 @@ public class GestionOS {
             System.out.println("+···········································+");
             System.out.println("| 0. Salir de la aplicación                 |");
             System.out.println("=============================================");
-            opcio = demanarOpcioMenu();
+            opcio = InstanciaControlador.demanarOpcioMenu();
             switch (opcio) {
                 case '1' -> InstanciaControlador.nuevopedido();
                 case '2' -> InstanciaControlador.eliminarpedido();
@@ -109,7 +101,7 @@ public class GestionOS {
             System.out.println("············································");
             System.out.println("0. Salir de la aplicación");
             System.out.println("============================================");
-            opcio = demanarOpcioMenu();
+            opcio = InstanciaControlador.demanarOpcioMenu();
             switch (opcio) {
                 case '1' -> InstanciaControlador.nuevoarticulo();
                 case '2' -> InstanciaControlador.borrararticulo();
@@ -137,7 +129,7 @@ public class GestionOS {
             System.out.println("············································");
             System.out.println("0. Volver al menú principal");
             System.out.println("============================================");
-            opcio = demanarOpcioMenu();
+            opcio = InstanciaControlador.demanarOpcioMenu();
             switch (opcio) {
                 case '1' -> InstanciaControlador.nuevocliente();
                 case '2' -> InstanciaControlador.borrarcliente();

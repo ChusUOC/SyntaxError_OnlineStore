@@ -7,11 +7,22 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class controlador {
 
     public Datos ModeloInicial = new Datos();
+    Scanner teclado = new Scanner(System.in);
 
+    public char demanarOpcioMenu() {
+        String resp;
+        System.out.print("Elige una opción (0 - Salir): ");
+        resp = teclado.nextLine();
+        if (resp.isEmpty()) {
+            resp = " ";
+        }
+        return resp.charAt(0);
+    }
 
     /**
      * Método para introducir pedidos nuevos
